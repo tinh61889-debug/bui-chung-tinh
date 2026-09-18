@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: #9cd1ff;
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+        margin: 0;
+        padding: 30px;
+      }
+      .header-box {
+        width: 320px;
+        margin: 0 auto 30px auto;
+        background-color: #00ffff;
+        border: 2px solid black;
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px rgba(100, 100, 100, 0.7);
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        overflow: hidden;
+      }
+      .header-top {
+        border-bottom: 3px solid black;
+        padding: 5px;
+        position: relative;
+      }
+      .header-bottom {
+        padding: 3px;
+      }
+      h2 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      .subtitle {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+      .form-container {
+        width: 650px;
+        margin: 0 auto;
+      }
+      table.main-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table.main-table > tbody > tr > td {
+        padding: 6px 0;
+        vertical-align: middle;
+      }
+      .label-col {
+        width: 230px;
+      }
+      input[type="text"] {
+        border: 1px solid #777;
+        padding: 2px 3px;
+      }
+      select {
+        border: 1px solid #777;
+        padding: 2px 3px;
+      }
+      hr {
+        border: 0;
+        border-top: 2px solid black;
+        margin: 18px 0;
+      }
+      .sub-table {
+        border-collapse: collapse;
+      }
+      .sub-table td {
+        padding: 1px 15px 1px 0;
+        vertical-align: middle;
+      }
+      textarea {
+        width: 420px;
+        height: 100px;
+        border: 1px solid #777;
+        resize: none;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .buttons button {
+        padding: 2px 8px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        background-color: #f0f0f0;
+        border: 1px solid #777;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+      label {
+        display: inline-flex;
+        align-items: center;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-box">
+      <div class="header-top">Jackson</div>
+      <div class="header-bottom">Electronics</div>
+    </div>
+    <h2>Registration Form</h2>
+    <div class="subtitle">Register your Jackson Electronics product here</div>
+
+    <div class="form-container">
+      <table class="main-table">
+        <tr>
+          <td class="label-col">First Name:</td>
+          <td>
+            <input type="text" style="width: 130px" />
+            <span style="margin-left: 2px">Last Name:</span>
+            <input type="text" style="width: 130px" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label-col">Address #1:</td>
+          <td><input type="text" style="width: 245px" /></td>
+        </tr>
+        <tr>
+          <td class="label-col">Address #2:</td>
+          <td><input type="text" style="width: 245px" /></td>
+        </tr>
+        <tr>
+          <td class="label-col">City:</td>
+          <td>
+            <input type="text" style="width: 168px" />
+            <span style="margin-left: 2px">State:</span>
+            <input type="text" style="width: 40px" />
+            <span style="margin-left: 2px">Zip:</span>
+            <input type="text" style="width: 80px" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label-col">Country:</td>
+          <td>
+            <input type="text" value="United States" style="width: 168px" />
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="main-table">
+        <tr>
+          <td class="label-col">Product:</td>
+          <td>
+            <select style="width: 140px">
+              <option>ScanMaster</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label-col">Date Purchased:</td>
+          <td><input type="text" style="width: 170px" /></td>
+        </tr>
+        <tr>
+          <td class="label-col">Serial #:</td>
+          <td><input type="text" style="width: 170px" /></td>
+        </tr>
+        <tr>
+          <td class="label-col" style="vertical-align: top; padding-top: 8px">
+            Used for:
+          </td>
+          <td>
+            <table class="sub-table">
+              <tr>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="used_for"
+                      checked
+                      style="accent-color: #4caf50"
+                    />
+                    Home</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="used_for"
+                      checked
+                      style="accent-color: #4caf50"
+                    />
+                    Educational Institution</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="used_for"
+                      checked
+                      style="accent-color: #4caf50"
+                    />
+                    Business</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="used_for"
+                      checked
+                      style="accent-color: #4caf50"
+                    />
+                    Other</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="used_for"
+                      checked
+                      style="accent-color: #4caf50"
+                    />
+                    Government</label
+                  >
+                </td>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="label-col" style="vertical-align: top; padding-top: 8px">
+            System (check all that apply):
+          </td>
+          <td>
+            <table class="sub-table">
+              <tr>
+                <td>
+                  <label
+                    ><input
+                      type="checkbox"
+                      checked
+                      style="accent-color: #0078d7"
+                    />
+                    Windows</label
+                  >
+                </td>
+                <td style="padding-left: 48px">
+                  <label><input type="checkbox" /> UNIX</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label><input type="checkbox" /> Macintosh</label>
+                </td>
+                <td style="padding-left: 48px">
+                  <label><input type="checkbox" /> Other</label>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <table class="main-table">
+        <tr>
+          <td class="label-col" style="vertical-align: top; padding-top: 5px">
+            Comments?:
+          </td>
+          <td><textarea></textarea></td>
+        </tr>
+      </table>
+
+      <div class="buttons">
+        <button>Click to register</button>
+        <button>Click to cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
